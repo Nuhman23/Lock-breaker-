@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lock Breaker Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #121212; color: #fff; text-align: center; padding-top: 50px; }
+        input { font-size: 1.2em; padding: 10px; margin: 10px; }
+        button { padding: 10px 20px; font-size: 1.2em; }
+        .result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🔒 Lock Breaker</h1>
+    <p>Guess the 4-digit code:</p>
+    <input type="text" id="guess" maxlength="4" placeholder="0000">
+    <button onclick="checkGuess()">Submit</button>
+    <div class="result" id="result"></div>
+    <div class="result" id="history"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
